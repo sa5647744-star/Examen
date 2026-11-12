@@ -258,7 +258,7 @@ button:hover::before {
   transform: translate(8px, 8px);
 }
 
-.Benefits {
+.benefits {
   justify-content: space-between;
   position: relative;
   display: flex;
@@ -266,45 +266,45 @@ button:hover::before {
   max-height: 620px;
   margin: 0 auto;
 }
-.Benefits__container {
+.benefits__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 36px;
 }
-.Benefits__item {
+.benefits__item {
   max-width: 570px;
   max-height: 250px;
   padding-inline: 35px;
   padding-block: 71px;
 }
-.Benefits__title {
+.benefits__title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
 }
-.Benefits__text {
+.benefits__text {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   margin-top: 30px;
   color: #262A3F;
   opacity: 80%;
 }
-.Benefits__color {
+.benefits__color {
   color: #438e3b;
   font-style: italic;
 }
 
-.Quote {
+.quote {
   position: relative;
   display: flex;
   max-width: 1170px;
   max-height: 620px;
   margin: 0 auto;
 }
-.Quote__img {
+.quote__img {
   margin-top: 120px;
 }
-.Quote__text {
+.quote__text {
   max-width: 630px;
   max-height: 140px;
   display: flex;
@@ -315,7 +315,7 @@ button:hover::before {
   font-size: 32px;
   color: #ffffff;
 }
-.Quote__text_1 {
+.quote__text_1 {
   max-width: 630px;
   max-height: 140px;
   display: flex;
@@ -327,13 +327,13 @@ button:hover::before {
   font-size: 20px;
   color: #ffffff;
 }
-.Quote__icon {
+.quote__icon {
   position: absolute;
   top: 180px;
   left: 200px;
 }
 
-.Promises {
+.promises {
   align-items: center;
   top: 120px;
   position: relative;
@@ -342,11 +342,11 @@ button:hover::before {
   max-height: 540px;
   margin: 0 auto;
 }
-.Promises__img {
+.promises__img {
   max-width: 640px;
   max-height: 540px;
 }
-.Promises__background {
+.promises__background {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   column-gap: 70px;
@@ -359,23 +359,23 @@ button:hover::before {
   background-color: #ffffff;
   opacity: 90%;
 }
-.Promises__title {
+.promises__title {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   color: #262A3F;
 }
-.Promises__text {
+.promises__text {
   font-family: "Lato", sans-serif;
   margin-top: 15px;
   font-size: 18px;
   color: #262A3F;
   opacity: 80%;
 }
-.Promises__item {
+.promises__item {
   max-width: 300px;
   max-height: 115px;
 }
-.Promises__button {
+.promises__button {
   letter-spacing: 8%;
   font-size: 20px;
   line-height: 20px;
@@ -398,4 +398,66 @@ button::before {
 
 button:hover::before {
   transform: translate(8px, 8px);
+}
+
+.reviews {
+  position: relative;
+  top: 240px;
+  max-width: 1170px;
+  max-height: 540px;
+  margin: 0 auto;
+}
+.reviews__title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+.reviews__color {
+  color: #02b505;
+  font-style: italic;
+}
+.reviews__text {
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  color: #262A3F;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 80%;
+}
+.reviews__conteiner {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  max-width: 1170px;
+  min-height: 340px;
+}
+.reviews__card {
+  max-width: 370px;
+  max-height: 340px;
+}
+.reviews__info {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 26px;
+  margin-top: -336px;
+  opacity: 80%;
+  padding-inline: 40px;
+  padding-block: 30px;
+}
+.reviews__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.reviews__authorn {
+  position: absolute;
+  padding-inline: 40px;
+  bottom: 30px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  top: auto;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 8%;
 }/*# sourceMappingURL=main.css.map */
