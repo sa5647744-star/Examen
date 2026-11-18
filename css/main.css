@@ -450,6 +450,16 @@ button:hover::before {
   height: 100%;
   position: relative;
 }
+.reviews__info {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 26px;
+  margin-top: -336px;
+  opacity: 80%;
+  padding-inline: 40px;
+  padding-block: 30px;
+}
 .reviews__authorn {
   position: absolute;
   padding-inline: 40px;
@@ -460,4 +470,81 @@ button:hover::before {
   font-size: 20px;
   font-style: italic;
   letter-spacing: 8%;
+}
+
+.video {
+  max-width: 970px;
+  max-height: 777px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.video__block {
+  padding: 30px;
+  align-items: center;
+  max-width: 970px;
+  max-height: 601px;
+  border: 1px solid #E4E4E4;
+}
+.video__video {
+  width: 100%;
+  max-height: 539px;
+}
+.video__title {
+  font-family: "Playfair Display", serif;
+  line-height: 48px;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #262A3F;
+}
+.video__color {
+  color: #85BBB1;
+  font-style: italic;
+}
+.video__text {
+  margin-top: 20px;
+  max-width: 890px;
+  max-height: 52px;
+  opacity: 80%;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+}
+
+.contact {
+  position: relative;
+  top: 520px;
+  display: flex;
+  gap: 230px;
+  max-width: 1170px;
+  max-height: 240px;
+  margin: 0 auto;
+  border: 1px solid #E4E4E4;
+}
+.contact__block {
+  max-width: 470px;
+  max-height: 240px;
+}
+.contact__block_2 {
+  max-width: 470px;
+  max-height: 240px;
+}
+.contact__title {
+  font-family: "Playfair Display", serif;
+  margin-top: 21px;
+  line-height: 48px;
+  font-size: 40px;
+  color: #262A3F;
+  padding-bottom: 20px;
+}
+.contact__color {
+  color: #85BBB1;
+  font-style: italic;
+}
+.contact__text {
+  opacity: 80%;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
 }/*# sourceMappingURL=main.css.map */
