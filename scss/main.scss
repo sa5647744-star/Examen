@@ -188,6 +188,60 @@
         width: 100%;
         padding: 0px;
     }
+    .first-screen-content {
+        position: absolute;
+        margin: 0 auto;
+        left: 240px;
+        top: 260px;
+
+                &__item {
+                    max-width: 600px;
+                    max-height: 250px;
+                    padding-inline: 35px;
+                    padding-block: 71px;
+                }
+                &__title {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 44px;
+                }
+                &__text {
+                    max-width: 500px;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    color: #262A3F;
+                    opacity: 80%;
+                }
+                &__color {
+                    color: #438e3b;
+                    font-style: italic;
+                }
+                &__button {
+                letter-spacing: 8%;
+                font-size: 20px;
+                line-height: 20px;
+                color: #F1897B;
+            }
+        }
+          
+
+            button::before {
+              content: ""; 
+              position: absolute; 
+              width: 122px;
+              height: 20px;
+              top: 4px;
+              left: 4px;
+              right: 8px; 
+              bottom: -8px;
+              background: #F1897B; 
+              z-index: -1;
+              transition: transform 0.2s ease;
+            }
+
+            button:hover::before {
+              transform: translate(8px, 8px);
+            }
 
     .info {
         display: flex;
@@ -574,5 +628,19 @@
                 font-size: 18px;
                 line-height: 26px;
                 color: #262A3F;
+            }
+            &__info {
+                opacity: 50%;
+                font-family: 'Playfair Display', serif;
+                font-size: 18px;
+                letter-spacing: 8%;
+                font-style: italic;
+                line-height: 26px;
+                color: #262A3F;
+            }
+            &__line {
+                width: 470px;
+                height: 1px;
+                background-color: #262A3F;
             }
         }
