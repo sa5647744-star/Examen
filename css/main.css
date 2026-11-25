@@ -9,12 +9,13 @@
 @media screen and (max-width: 992px) {
   .container {
     padding: 0 17px;
+    max-width: 1170px;
   }
 }
 
 .header {
   background: #ffffff;
-  padding: 41px 0;
+  padding: 41px 0px;
   position: relative;
   position: absolute;
   width: 100%;
@@ -25,8 +26,7 @@
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
-  padding-inline: 135px;
+  gap: 250px;
   align-items: center;
   margin: 0 auto;
 }
@@ -38,7 +38,6 @@
 
 .logo {
   padding-inline: 135px;
-  left: 135px;
 }
 
 .menu {
@@ -164,6 +163,7 @@
 .icon {
   width: 100%;
   padding: 0px;
+  z-index: -2;
 }
 
 .first-screen-content {
@@ -181,6 +181,7 @@
 .first-screen-content__title {
   font-family: "Playfair Display", serif;
   font-size: 44px;
+  font-weight: 400;
 }
 .first-screen-content__text {
   max-width: 500px;
@@ -189,47 +190,31 @@
   margin-top: 30px;
   color: #262A3F;
   opacity: 80%;
+  font-weight: 300;
 }
 .first-screen-content__color {
-  color: #438e3b;
+  color: #85BBB1;
   font-style: italic;
 }
 .first-screen-content__button {
   letter-spacing: 8%;
   font-size: 20px;
-  line-height: 20px;
+  font-weight: 20px;
   color: #F1897B;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  width: 122px;
-  height: 20px;
-  top: 4px;
-  left: 4px;
-  right: 8px;
-  bottom: -8px;
-  background: #F1897B;
-  z-index: -1;
-  transition: transform 0.2s ease;
-}
-
-button:hover::before {
-  transform: translate(8px, 8px);
+  font-weight: 700;
 }
 
 .info {
   display: flex;
   margin-top: 60px;
   gap: 56px;
+  opacity: 90%;
   position: absolute;
   width: 800px;
   max-height: 580px;
   padding-block: 45px;
   left: 560px;
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(1px);
+  background: #ffffff;
 }
 .info__list {
   display: flex;
@@ -241,6 +226,7 @@ button:hover::before {
   line-height: 26px;
   color: #262A3F;
   opacity: 80%;
+  font-weight: 300;
 }
 .info__text_1 {
   margin-top: 40px;
@@ -248,20 +234,24 @@ button:hover::before {
   line-height: 26px;
   color: #262A3F;
   opacity: 80%;
+  font-weight: 300;
 }
 .info__title {
   text-align: center;
   font-size: 68px;
+  font-weight: 400;
 }
 .info__title_1 {
   text-align: center;
   margin-top: 40px;
   font-size: 68px;
+  font-weight: 400;
 }
 .info__title_2 {
   text-align: center;
   margin-top: 40px;
   font-size: 68px;
+  font-weight: 400;
 }
 .info__linie {
   margin-top: 40px;
@@ -275,6 +265,7 @@ button:hover::before {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: #262A3F;
+  font-weight: 300;
 }
 .info__button {
   letter-spacing: 8%;
@@ -287,15 +278,15 @@ button {
   border: none;
   background: none;
   margin-top: 50px;
-  font-weight: bold;
   color: #b85d4f;
   cursor: pointer;
 }
 
 button::before {
+  position: static;
   content: "";
   position: absolute;
-  width: 150px;
+  width: fit-content;
   height: 13px;
   top: 6px;
   left: 8px;
@@ -303,7 +294,6 @@ button::before {
   opacity: 30%;
   bottom: -8px;
   background: #f2c2bc;
-  z-index: -1;
   transition: transform 0.2s ease;
 }
 
@@ -334,6 +324,7 @@ button:hover::before {
 .benefits__title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
+  font-weight: 400;
 }
 .benefits__text {
   font-family: "Lato", sans-serif;
@@ -341,9 +332,10 @@ button:hover::before {
   margin-top: 30px;
   color: #262A3F;
   opacity: 80%;
+  font-weight: 300;
 }
 .benefits__color {
-  color: #438e3b;
+  color: #85BBB1;
   font-style: italic;
 }
 
@@ -367,6 +359,7 @@ button:hover::before {
   font-family: "Lato", serif;
   font-size: 32px;
   color: #ffffff;
+  font-weight: 400;
 }
 .quote__text_1 {
   max-width: 630px;
@@ -379,6 +372,7 @@ button:hover::before {
   font-style: italic;
   font-size: 20px;
   color: #ffffff;
+  font-weight: 400;
 }
 .quote__icon {
   position: absolute;
@@ -416,6 +410,7 @@ button:hover::before {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   color: #262A3F;
+  font-weight: 400;
 }
 .promises__text {
   font-family: "Lato", sans-serif;
@@ -423,6 +418,7 @@ button:hover::before {
   font-size: 18px;
   color: #262A3F;
   opacity: 80%;
+  font-weight: 300;
 }
 .promises__item {
   max-width: 300px;
@@ -432,30 +428,54 @@ button:hover::before {
   letter-spacing: 8%;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 700;
   color: #F1897B;
 }
 
-button::before {
-  content: "";
-  position: absolute;
-  width: 122px;
-  height: 20px;
-  top: 4px;
-  left: 4px;
-  right: 8px;
-  bottom: -8px;
-  background: #F1897B;
-  z-index: -1;
-  transition: transform 0.2s ease;
+.video {
+  max-width: 970px;
+  max-height: 777px;
+  margin: 0 auto;
+  margin-top: 120px;
 }
-
-button:hover::before {
-  transform: translate(8px, 8px);
+.video__block {
+  padding: 30px;
+  align-items: center;
+  max-width: 970px;
+  max-height: 601px;
+  border: 1px solid #E4E4E4;
+}
+.video__video {
+  width: 100%;
+  max-height: 539px;
+}
+.video__title {
+  font-family: "Playfair Display", serif;
+  line-height: 48px;
+  font-size: 40px;
+  margin-top: 50px;
+  color: #262A3F;
+  font-weight: 400;
+}
+.video__color {
+  color: #85BBB1;
+  font-style: italic;
+}
+.video__text {
+  margin-top: 20px;
+  max-width: 890px;
+  max-height: 52px;
+  opacity: 80%;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  font-weight: 300;
 }
 
 .reviews {
   position: relative;
-  top: 240px;
+  top: 200px;
   max-width: 1170px;
   max-height: 540px;
   margin: 0 auto;
@@ -463,9 +483,10 @@ button:hover::before {
 .reviews__title {
   font-family: "Playfair Display", serif;
   font-size: 40px;
+  font-weight: 400;
 }
 .reviews__color {
-  color: #02b505;
+  color: #85BBB1;
   font-style: italic;
 }
 .reviews__text {
@@ -476,6 +497,7 @@ button:hover::before {
   font-size: 18px;
   line-height: 26px;
   opacity: 80%;
+  font-weight: 300;
 }
 .reviews__conteiner {
   display: flex;
@@ -497,6 +519,7 @@ button:hover::before {
   opacity: 80%;
   padding-inline: 40px;
   padding-block: 30px;
+  font-weight: 400;
 }
 .reviews__img {
   width: 100%;
@@ -523,45 +546,7 @@ button:hover::before {
   font-size: 20px;
   font-style: italic;
   letter-spacing: 8%;
-}
-
-.video {
-  max-width: 970px;
-  max-height: 777px;
-  margin: 0 auto;
-  margin-top: 120px;
-}
-.video__block {
-  padding: 30px;
-  align-items: center;
-  max-width: 970px;
-  max-height: 601px;
-  border: 1px solid #E4E4E4;
-}
-.video__video {
-  width: 100%;
-  max-height: 539px;
-}
-.video__title {
-  font-family: "Playfair Display", serif;
-  line-height: 48px;
-  font-size: 40px;
-  margin-top: 50px;
-  color: #262A3F;
-}
-.video__color {
-  color: #85BBB1;
-  font-style: italic;
-}
-.video__text {
-  margin-top: 20px;
-  max-width: 890px;
-  max-height: 52px;
-  opacity: 80%;
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  color: #262A3F;
+  font-weight: 400;
 }
 
 .contact {
@@ -589,6 +574,7 @@ button:hover::before {
   font-size: 40px;
   color: #262A3F;
   padding-bottom: 20px;
+  font-weight: 400;
 }
 .contact__color {
   color: #85BBB1;
@@ -600,6 +586,7 @@ button:hover::before {
   font-size: 18px;
   line-height: 26px;
   color: #262A3F;
+  font-weight: 300;
 }
 .contact__info {
   opacity: 50%;
